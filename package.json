@@ -1,10 +1,10 @@
 {
-  "name": "ansan-co",
+  "name": "modernia",
   "version": "1.0.0",
   "description": "Help you to create commits easer",
   "type": "module",
   "bin": {
-    "ansan-co": "./src/bin.js"
+    "modernia": "./src/bin.js"
   },
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "file://.",
   "license": "ISC",
   "devDependencies": {
-    "ansan-co": "",
+    "modernia": "",
     "standard": "^17.0.0"
   },
   "eslintConfig": {
