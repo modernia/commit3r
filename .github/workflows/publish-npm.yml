@@ -1,9 +1,6 @@
 name: Publihs package to NPM
-run-name: ${{ action.actor }} is pushing to ${{ github.ref }}
-on:
-  push:
-    branches:
-      - master
+run-name: ${{ github.actor }} is pushing to ${{ github.ref }}
+on: [push]
 jobs:
   Publish-package:
     runs-on: ubuntu-latest
