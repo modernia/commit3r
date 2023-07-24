@@ -14,6 +14,11 @@ export const COMMIT_TYPES = {
     description: 'Improve performance',
     release: true
   },
+  stateless: {
+    emoji: '👻',
+    description: 'Only file without anything',
+    release: false
+  },
   refactor: {
     emoji: '⚒️',
     description: 'Refactor code',
