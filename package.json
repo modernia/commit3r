@@ -1,10 +1,10 @@
 {
-  "name": "modernia",
-  "version": "1.0.0",
+  "name": "commit3r",
+  "version": "1.0.1",
   "description": "Help you to create commits easer",
   "type": "module",
   "bin": {
-    "modernia": "./src/bin.js"
+    "commit3r": "./src/bin.js"
   },
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "file://.",
   "license": "ISC",
   "devDependencies": {
-    "modernia": "",
+    "commit3r": "",
     "standard": "^17.0.0"
   },
   "eslintConfig": {
