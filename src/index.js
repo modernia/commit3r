@@ -30,13 +30,16 @@ if (stageddFiles.length === 0 && changedFiles.length > 0) {
   if (isCancel(files)) exitProgram()
 
   await gitAdd({ files })
+} else if (stageddFiles.length === 0 && changedFiles.length === 0) {
+  outro(colors.red('Error: No hay archivos para añadir al commit'))
+  process.exit(1)
 }
 
 const commitType = await select({
   message: colors.cyan('Selecciona el tipo de commit:'),
   options: Object.entries(COMMIT_TYPES).map(([key, value]) => ({
     value: key,
-    label: `${value.emoji} ${key.padEnd(8, ' ')} ∙ ${value.description}`
+    label: `${value.emoji} ${key.padEnd(10, ' ')} ∙ ${value.description}`
   }))
 })
 if (isCancel(commitType)) exitProgram()
