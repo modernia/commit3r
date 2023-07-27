@@ -19,3 +19,6 @@ Utiliza los siguiente comandos para instalar en modo de desarrollo:
 pnpm install
 pnpm run dev
 ```
+
+#### Screenshot
+![Preview of commit3r](./image.png)
